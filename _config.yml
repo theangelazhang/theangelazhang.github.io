@@ -26,8 +26,7 @@ defaults:
 theme: tufte-pandoc-jekyll
 gems:
   - jekyll-pandoc
-  gems:
-  - jekyll-pandoc
+
 
 markdown: Pandoc
 pandoc:
