@@ -1,8 +1,8 @@
 # ----------- CONFIGURABLE START -----------
-title:            "Lily Holloway"
+site.title:       "Lily Holloway"
+site.author:      "Lily Holloway"
 description:      "poetry and writing by Lily Holloway"
-url:              https://lilyholloway.co.nz # Site url, without a slash at the end.
-signoff:          "Lily" # Your name
+site.baseurl:     https://lilyholloway.co.nz # Site url, without a slash at the end.
 facebook_appid:   # APP ID for like button, remove from /_includes/share.html if unwanted.
 google_analytics: # Set tracking, remove from /javascripts/basic.js if unwanted.
 share:            false # Turn on twitter and facebook share buttons
@@ -26,3 +26,12 @@ defaults:
 theme: tufte-pandoc-jekyll
 gems:
   - jekyll-pandoc
+  gems:
+  - jekyll-pandoc
+
+markdown: Pandoc
+pandoc:
+  extensions:
+    - section-divs
+    - from: 'markdown+tex_math_single_backslash'
+    - filter: 'pandoc-sidenote'
