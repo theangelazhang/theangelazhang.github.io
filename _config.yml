@@ -20,3 +20,9 @@ permalink:        /posts/:title
 defaults:
   - values:
       layout: "default"
+      
+      
+      
+theme: tufte-pandoc-jekyll
+gems:
+  - jekyll-pandoc
